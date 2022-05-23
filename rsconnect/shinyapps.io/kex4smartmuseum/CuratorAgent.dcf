@@ -1,0 +1,14 @@
+name: CuratorAgent
+title: CuratorAgent
+username:
+account: kex4smartmuseum
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 6307355
+bundleId: 5921527
+url: https://kex4smartmuseum.shinyapps.io/CuratorAgent/
+when: 1652928915.54227
+lastSyncTime: 1652928915.54229
+asMultiple: FALSE
+asStatic: FALSE
+ignoredFiles: .RData|CreateDS.R|Datas

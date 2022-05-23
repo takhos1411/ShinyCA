@@ -1,0 +1,37 @@
+---
+title: "Findings"
+output: 
+    html_document: 
+        code_folding: hide
+---
+
+For Debug: Content of params.
+```{r}
+print(params) 
+```
+
+
+Improvement idea.
+```{r}
+print(params$idea)
+print(paste("created at :", params$itime)) 
+```
+
+Learning that was the basis of the idea
+```{r}
+print(params$learning)
+print(paste("created at :", params$ltime)) 
+```
+
+Findings that were the basis of learning
+```{r, class.source="fold-show"}
+for ( i in as.integer(params$findings)){
+    fdg <- Findings[i,]
+    param <- fdParams[[i]]
+    print("-------------------------------")
+    print(paste("Findings: ",fdg$finding))
+    mexPlot(y=param$y, interval=param$interval, node=param$node, fdt=param$fdt, tdt=param$tdt,f=param$f)
+}
+```
+
+
